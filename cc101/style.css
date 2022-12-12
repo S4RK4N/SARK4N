@@ -1,0 +1,210 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  background: darkred;
+  height: 80px;
+
+}
+label.logo{
+  color: white;
+  font-size:35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 13px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: red;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+.bubble{
+  width: 100%;
+  height: 77vh;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.bubble img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: normal;
+  flex-direction: column;
+  padding: 2%;
+  background-color: darkslategray;
+}
+footer h3{
+  margin-bottom: 5px;
+}
+.footerline{
+  width: 100%;
+  height: 1px;
+  background-color: darkred;
+}
+body{
+  background-image: url("IThings.jpg");
+}
+.details {
+  margin-left: 10%;
+  margin-top: 14%;
+  color: white;
+}
+
+.details h1 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.details p {
+  background: none;
+  line-height: 22px;
+}
+.Personal {
+  color: white;
+  margin-left: 44%;
+}
+.Info {
+  font-size: medium;
+  background-color: black;
+  color: white;
+  margin-top: 5%;
+  margin-left: 40%;
+  margin-right: 40%;
+  text-align: left;
+}
+.About h2{
+  color: white;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+.About h3{
+  color: white;
+  margin-left: 1%;
+}
+
+.Href1 {
+  margin-right: 78%;
+}
+.Schedule {
+  margin-left: 32%;
+  color: white;
+  font-size: medium;
+  margin-bottom: 10%;
+
+}
+.scroll-bg1 {
+  background: rgb(129, 0, 0);
+  width: 400px;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 50px;
+}
+.scroll-div1 {
+  width: 400px;
+  background: rgb(129, 0, 0);
+  height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.scroll-object1 {
+  color: wheat;
+  font-family: cursive;
+  font-size: 15px;
+  padding: 20px;
+}
+.cc102output {
+  width: 100%;
+  height: 77vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+.cc102output img {
+  width: 500px;
+  height: 500px;
+}
